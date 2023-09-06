@@ -8,6 +8,7 @@ kitty
 hyprpaper
 waybar
 otf-font-awesome
+pacman-contrib
 neofetch
 htop
 wl-clipboard

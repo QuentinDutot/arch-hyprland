@@ -14,7 +14,15 @@ window#waybar {
 #workspaces button {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
+}
+
+#workspaces button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#workspaces button:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 #workspaces button.active {
@@ -38,7 +46,9 @@ tooltip label {
 #backlight,
 #bluetooth,
 #network,
-#clock {
+#clock,
+#custom-update,
+#custom-shutdown {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   padding: 0px 10px;
@@ -60,4 +70,8 @@ tooltip label {
 #network,
 #clock {
   margin-left: 5px;
+}
+
+#clock {
+  margin-right: 5px;
 }

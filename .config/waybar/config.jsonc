@@ -9,14 +9,14 @@
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "tray",
-    // "custom/updates",
     // "pulseaudio",
     // "pulseaudio-microphone",
     "backlight",
-    "bluetooth",
+    // "bluetooth",
     "network",
-    "clock"
-    // "custom/power_btn"
+    "clock",
+    "custom/update",
+    "custom/shutdown"
   ],
 
   "cpu": {
@@ -45,14 +45,6 @@
     "icon-size": 16,
     "spacing": 10
   },
-
-  // "custom/updates": {
-  //     "format": "{}",
-  //     "exec": "~/.config/HyprV/waybar/scripts/update-sys",
-  //     "on-click": "~/.config/HyprV/waybar/scripts/update-sys update",
-  //     "interval": 300,
-  //     "tooltip": true
-  // }
 
   // "pulseaudio": {
   //     "format": "{icon}",
@@ -104,11 +96,19 @@
   "clock": {
     "format": "{:%H:%M}",
     "tooltip-format": "{:%A, %B %d, %Y}"
-  }
+  },
 
-  // "custom/power_btn": {
-  //     "format": "",
-  //     "on-click": "sh -c '(sleep 0.5s; wlogout --protocol layer-shell)' & disown",
-  //     "tooltip": false
-  // },
+  "custom/update": {
+    "format": "",
+    "interval": 300,
+    "exec": "~/.config/waybar/updater check",
+    "on-click": "~/.config/waybar/updater update",
+    "tooltip": false
+  },
+
+  "custom/shutdown": {
+    "format": "",
+    "on-click": "sh -c 'shutdown -h now' & disown",
+    "tooltip": false
+  }
 }
