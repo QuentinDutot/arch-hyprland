@@ -5,7 +5,15 @@
   "margin-left": 10,
   "margin-right": 10,
   "exclusive": true,
-  "modules-left": ["cpu", "memory", "disk"],
+  "modules-left": [
+    "cpu",
+    "memory",
+    "disk",
+    "custom/terminal",
+    "custom/browser",
+    "custom/editor",
+    "custom/slack"
+  ],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "tray",
@@ -34,6 +42,30 @@
     "format": " {percentage_used}%",
     "on-click": "kitty sh -c 'htop'",
     "tooltip-format": "{used} used on {total}"
+  },
+
+  "custom/terminal": {
+    "format": "",
+    "on-click": "kitty",
+    "tooltip": false
+  },
+
+  "custom/browser": {
+    "format": "",
+    "on-click": "sh -c 'microsoft-edge-stable' & disown",
+    "tooltip": false
+  },
+
+  "custom/editor": {
+    "format": "",
+    "on-click": "sh -c 'code' & disown",
+    "tooltip": false
+  },
+
+  "custom/slack": {
+    "format": "",
+    "on-click": "sh -c 'slack' & disown",
+    "tooltip": false
   },
 
   "hyprland/workspaces": {
@@ -81,7 +113,7 @@
   // },
 
   "backlight": {
-    "format": " {percent}%",
+    "format": "",
     "scroll-step": 5,
     "tooltip-format": "{percent}%"
   },
