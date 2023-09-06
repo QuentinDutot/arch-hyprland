@@ -7,6 +7,7 @@ options: systemd, pipewire, network manager, multilib, git
 kitty
 hyprpaper
 waybar
+otf-font-awesome
 neofetch
 htop
 wl-clipboard

@@ -1,19 +1,18 @@
 {
   "layer": "top",
   "height": 32,
-  "margin-top": 15,
-  "margin-left": 15,
-  "margin-right": 15,
+  "margin-top": 10,
+  "margin-left": 10,
+  "margin-right": 10,
   "exclusive": true,
-  "modules-left": ["cpu", "memory", "disk", "hyprland/workspaces"],
+  "modules-left": ["cpu", "memory", "disk"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "tray",
     // "custom/updates",
     // "pulseaudio",
-    // "pulseaudio#microphone",
-    // "backlight",
-    "battery",
+    // "pulseaudio-microphone",
+    "backlight",
     "bluetooth",
     "network",
     "clock"
@@ -26,19 +25,19 @@
   },
 
   "memory": {
-    "format": " {percentage}%",
+    "format": " {percentage}%",
     "on-click": "kitty sh -c 'htop'",
     "tooltip-format": "{used:0.1f}GiB used on {total:0.1f}GiB"
   },
 
   "disk": {
-    "format": " {percentage_used}%",
+    "format": " {percentage_used}%",
     "on-click": "kitty sh -c 'htop'",
     "tooltip-format": "{used} used on {total}"
   },
 
   "hyprland/workspaces": {
-    "format": "·",
+    "format": "{id}",
     "show-special": true
   },
 
@@ -76,7 +75,7 @@
   //     "tooltip-format": "{icon} at {volume}%"
   // },
 
-  // "pulseaudio#microphone": {
+  // "pulseaudio-microphone": {
   //     "format": "{format_source}",
   //     "format-source": "",
   //     "format-source-muted": "",
@@ -89,28 +88,22 @@
   //     "tooltip-format": " at {volume}%"
   // },
 
-  // "backlight": {
-  //   "device": "intel_backlight",
-  //   "format": "{icon}",
-  //   "format-alt-click": "click-right",
-  //   "format-alt": "{icon} {percent}%",
-  //   "format-icons": ["󰃞", "󰃟", "󰃠"],
-  //   "on-scroll-up": "~/.config/HyprV/waybar/scripts/brightness --inc",
-  //   "on-scroll-down": "~/.config/HyprV/waybar/scripts/brightness --dec"
-  // },
+  "backlight": {
+    "format": " {percent}%",
+    "scroll-step": 5,
+    "tooltip-format": "{percent}%"
+  },
 
-  "battery": {
-    "states": {
-      "good": 80,
-      "warning": 30,
-      "critical": 20
-    },
-    "format": "{icon}",
-    "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
-    "format-alt-click": "click-right",
-    "format-alt": "{icon} {capacity}%",
-    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+  "bluetooth": {},
+
+  "network": {
+    "format": " {essid}",
+    "tooltip": false
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%A, %B %d, %Y}"
   }
 
   // "custom/power_btn": {
