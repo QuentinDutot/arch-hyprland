@@ -6,6 +6,7 @@ options: systemd, pipewire, network manager, multilib, git
 # packages (yay)
 kitty
 hyprpaper
+waybar
 neofetch
 htop
 wl-clipboard
