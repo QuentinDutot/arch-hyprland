@@ -20,8 +20,10 @@ if [ "$1" = "check" ]; then
     if [[ "$COUNT" = "0" ]]
     then
         echo ""
+        notify-send "No updates available"
     else
         echo "$COUNT updates"
+        notify-send "$COUNT updates available"
     fi
     exit 0
 fi
@@ -29,4 +31,5 @@ fi
 # If the parameter is "update", update all services
 if [ "$1" = "update" ]; then
     kitty sh -c 'yay -Syu'
+    notify-send "System updated"
 fi

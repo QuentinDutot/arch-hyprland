@@ -20,7 +20,7 @@
     // "pulseaudio",
     // "pulseaudio-microphone",
     "backlight",
-    // "bluetooth",
+    "bluetooth",
     "network",
     "clock",
     "custom/update",
@@ -35,13 +35,13 @@
   "memory": {
     "format": " {percentage}%",
     "on-click": "kitty sh -c 'htop'",
-    "tooltip-format": "{used:0.1f}GiB used on {total:0.1f}GiB"
+    "tooltip-format": "{used:0.1f}GiB on {total:0.1f}GiB"
   },
 
   "disk": {
     "format": " {percentage_used}%",
     "on-click": "kitty sh -c 'htop'",
-    "tooltip-format": "{used} used on {total}"
+    "tooltip-format": "{used} on {total}"
   },
 
   "custom/terminal": {
@@ -118,14 +118,14 @@
     "tooltip-format": "{percent}%"
   },
 
-  // "bluetooth": {
-  //   "format": " {status}",
-  //   "format-disabled": "", // hides the module if the Bluetooth is disabled
-  //   "format-connected": " {num_connections} connected",
-  //   "tooltip-format": "{controller_alias}\t{controller_address}",
-  //   "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
-  //   "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
-  // },
+  "bluetooth": {
+    "format": "",
+    "on-click": "sh ~/.config/waybar/scripts/bluetooth",
+    "on-click-right": "blueman-manager",
+    "tooltip-format": "{status}",
+    "tooltip-format-connected": "{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias} {device_battery_percentage}%"
+  },
 
   "network": {
     "format": " {essid}",
@@ -140,8 +140,8 @@
   "custom/update": {
     "format": "",
     "interval": 300,
-    "exec": "sh ~/.config/waybar/updater check",
-    "on-click": "sh ~/.config/waybar/updater update",
+    "exec": "sh ~/.config/waybar/scripts/updater check",
+    "on-click": "sh ~/.config/waybar/scripts/updater update",
     "tooltip": false
   },
 
