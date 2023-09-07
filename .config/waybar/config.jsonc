@@ -118,7 +118,14 @@
     "tooltip-format": "{percent}%"
   },
 
-  "bluetooth": {},
+  // "bluetooth": {
+  //   "format": " {status}",
+  //   "format-disabled": "", // hides the module if the Bluetooth is disabled
+  //   "format-connected": " {num_connections} connected",
+  //   "tooltip-format": "{controller_alias}\t{controller_address}",
+  //   "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+  //   "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+  // },
 
   "network": {
     "format": " {essid}",
@@ -133,8 +140,8 @@
   "custom/update": {
     "format": "",
     "interval": 300,
-    "exec": "~/.config/waybar/updater check",
-    "on-click": "~/.config/waybar/updater update",
+    "exec": "sh ~/.config/waybar/updater check",
+    "on-click": "sh ~/.config/waybar/updater update",
     "tooltip": false
   },
 

@@ -19,7 +19,7 @@ if [ "$1" = "check" ]; then
 
     if [[ "$COUNT" = "0" ]]
     then
-        echo "1"
+        echo ""
     else
         echo "$COUNT updates"
     fi

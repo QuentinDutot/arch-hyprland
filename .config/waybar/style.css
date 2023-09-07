@@ -14,6 +14,7 @@ window#waybar {
 #workspaces button {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
+  font-size: 10px;
 }
 
 #workspaces button:first-child {
@@ -74,9 +75,7 @@ tooltip label {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-#custom-browser {
-  border-radius: 0px;
-}
+#custom-browser,
 #custom-editor {
   border-radius: 0px;
 }
@@ -87,11 +86,10 @@ tooltip label {
 
 #custom-terminal,
 #backlight,
+#bluetooth,
 #network,
-#clock {
+#clock,
+#custom-update,
+#custom-shutdown {
   margin-left: 5px;
-}
-
-#clock {
-  margin-right: 5px;
 }
