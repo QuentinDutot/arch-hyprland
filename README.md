@@ -1,19 +1,19 @@
-## install
+### install
 distro: archlinux
 profile: desktop > hyprland
 options: systemd, pipewire, network manager, multilib, git
 
-## init wifi
+### init wifi
 nmcli device wifi connect <SSID> password <PASSWORD>
 
-## init yay
+### init yay
 cd /opt
 sudo git clone https://aur.archlinux.org/yay-git.git
 sudo chown -R <USER>:<USER> ./yay-git
 cd yay-git && makepkg -si && cd .. && rm -rf yay-git
 yay -Syu
 
-## packages (yay -S <PACKAGE>)
+### packages (yay -S <PACKAGE>)
 kitty
 hyprpaper
 waybar
@@ -28,12 +28,12 @@ blueman-manager
 pamixer
 pavucontrol
 
-## applications (yay -S <PACKAGE>)
+### applications (yay -S <PACKAGE>)
 microsoft-edge-stable-bin
 visual-studio-code-bin
 slack-desktop
 
-## commands
+### commands
 systemctl enable NetworkManager
 systemctl enable pipewire-pulse
 systemctl enable bluetooth
