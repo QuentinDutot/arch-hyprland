@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # https://github.com/speltriao/Pacman-Update-for-GNOME-Shell
 
@@ -20,7 +20,6 @@ if [ "$1" = "check" ]; then
     if [[ "$COUNT" = "0" ]]
     then
         echo ""
-        notify-send "No updates available"
     else
         echo "$COUNT updates"
         notify-send "$COUNT updates available"

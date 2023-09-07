@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Check if Bluetooth is currently powered on
 status=$(bluetoothctl show | grep "Powered: yes")

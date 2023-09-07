@@ -1,8 +1,0 @@
-style=/home/quentin/.config/wofi/style.css
-show=drun
-width=400
-height=400
-insensitive=true
-prompt=
-allow-images=true
-gtk-dark=true

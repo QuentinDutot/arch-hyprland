@@ -49,6 +49,7 @@ tooltip label {
 #custom-slack,
 #tray,
 #backlight,
+#pulseaudio,
 #bluetooth,
 #network,
 #clock,
@@ -59,35 +60,28 @@ tooltip label {
   padding: 0px 10px;
 }
 
-#cpu {
+#cpu,
+#custom-terminal,
+#backlight {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-#memory {
-  border-radius: 0px;
-}
-#disk {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-
-#custom-terminal {
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
+#memory,
 #custom-browser,
-#custom-editor {
+#custom-editor,
+#pulseaudio,
+#bluetooth {
   border-radius: 0px;
 }
-#custom-slack {
+#disk,
+#custom-slack,
+#network {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
 #custom-terminal,
 #backlight,
-#bluetooth,
-#network,
 #clock,
 #custom-update,
 #custom-shutdown {

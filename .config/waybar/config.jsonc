@@ -17,9 +17,9 @@
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "tray",
-    // "pulseaudio",
-    // "pulseaudio-microphone",
     "backlight",
+    "pulseaudio",
+    "pulseaudio#microphone",
     "bluetooth",
     "network",
     "clock",
@@ -78,49 +78,39 @@
     "spacing": 10
   },
 
-  // "pulseaudio": {
-  //     "format": "{icon}",
-  //     "format-muted": "",
-  //     "on-click": "~/.config/HyprV/waybar/scripts/volume --toggle",
-  //     "on-click-right": "pavucontrol",
-  //     "on-scroll-up": "~/.config/HyprV/waybar/scripts/volume --inc",
-  //     "on-scroll-down": "~/.config/HyprV/waybar/scripts/volume --dec",
-  //     "scroll-step": 5,
-  //     "format-icons": {
-  //         "headphone": "",
-  //         "hands-free": "",
-  //         "headset": "",
-  //         "phone": "",
-  //         "portable": "",
-  //         "car": "",
-  //         "default": ["", "", ""]
-  //     },
-  //     "tooltip": true,
-  //     "tooltip-format": "{icon} at {volume}%"
-  // },
-
-  // "pulseaudio-microphone": {
-  //     "format": "{format_source}",
-  //     "format-source": "",
-  //     "format-source-muted": "",
-  //     "on-click": "~/.config/HyprV/waybar/scripts/volume --toggle-mic",
-  //     "on-click-right": "pavucontrol",
-  //     "on-scroll-up": "~/.config/HyprV/waybar/scripts/volume --mic-inc",
-  //     "on-scroll-down": "~/.config/HyprV/waybar/scripts/volume --mic-dec",
-  //     "scroll-step": 5,
-  //     "tooltip": true,
-  //     "tooltip-format": " at {volume}%"
-  // },
-
   "backlight": {
     "format": "",
     "scroll-step": 5,
     "tooltip-format": "{percent}%"
   },
 
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-muted": "",
+    "on-click": "sh ~/.config/waybar/scripts/volume.sh --toggle",
+    "on-click-right": "pavucontrol",
+    "on-scroll-up": "sh ~/.config/waybar/scripts/volume.sh --inc",
+    "on-scroll-down": "sh ~/.config/waybar/scripts/volume.sh --dec",
+    "scroll-step": 5,
+    "format-icons": { "default": ["", "", ""] },
+    "tooltip-format": "{volume}%"
+  },
+
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": "",
+    "format-source-muted": "",
+    "on-click": "sh ~/.config/waybar/scripts/volume.sh --mic-toggle",
+    "on-click-right": "pavucontrol",
+    "on-scroll-up": "sh ~/.config/waybar/scripts/volume.sh --mic-inc",
+    "on-scroll-down": "sh ~/.config/waybar/scripts/volume.sh --mic-dec",
+    "scroll-step": 5,
+    "tooltip": false
+  },
+
   "bluetooth": {
     "format": "",
-    "on-click": "sh ~/.config/waybar/scripts/bluetooth",
+    "on-click": "sh ~/.config/waybar/scripts/bluetooth.sh",
     "on-click-right": "blueman-manager",
     "tooltip-format": "{status}",
     "tooltip-format-connected": "{device_enumerate}",
@@ -128,8 +118,8 @@
   },
 
   "network": {
-    "format": " {essid}",
-    "tooltip": false
+    "format": "",
+    "tooltip-format": "{essid}"
   },
 
   "clock": {
@@ -140,8 +130,8 @@
   "custom/update": {
     "format": "",
     "interval": 300,
-    "exec": "sh ~/.config/waybar/scripts/updater check",
-    "on-click": "sh ~/.config/waybar/scripts/updater update",
+    "exec": "sh ~/.config/waybar/scripts/updater.sh check",
+    "on-click": "sh ~/.config/waybar/scripts/updater.sh update",
     "tooltip": false
   },
 

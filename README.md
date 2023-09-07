@@ -25,6 +25,8 @@ wl-clipboard
 bluez
 bluez-utils
 blueman-manager
+pamixer
+pavucontrol
 
 ## applications (yay -S <PACKAGE>)
 microsoft-edge-stable-bin
@@ -33,4 +35,5 @@ slack-desktop
 
 ## commands
 systemctl enable NetworkManager
+systemctl enable pipewire-pulse
 systemctl enable bluetooth
