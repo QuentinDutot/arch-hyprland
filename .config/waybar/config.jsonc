@@ -86,13 +86,13 @@
 
   "pulseaudio": {
     "format": "{icon}",
-    "format-muted": "",
+    "format-muted": "",
     "on-click": "sh ~/.config/waybar/scripts/volume.sh --toggle",
     "on-click-right": "pavucontrol",
     "on-scroll-up": "sh ~/.config/waybar/scripts/volume.sh --inc",
     "on-scroll-down": "sh ~/.config/waybar/scripts/volume.sh --dec",
     "scroll-step": 5,
-    "format-icons": { "default": ["", "", ""] },
+    "format-icons": { "default": ["", ""] },
     "tooltip-format": "{volume}%"
   },
 
@@ -114,7 +114,7 @@
     "on-click-right": "blueman-manager",
     "tooltip-format": "{status}",
     "tooltip-format-connected": "{device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias} {device_battery_percentage}%"
+    "tooltip-format-enumerate-connected": "{device_alias}"
   },
 
   "network": {
