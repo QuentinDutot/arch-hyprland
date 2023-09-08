@@ -15,6 +15,7 @@ yay -Syu
 
 ## packages (yay -S <PACKAGE>)
 kitty
+fish
 hyprpaper
 waybar
 otf-font-awesome
