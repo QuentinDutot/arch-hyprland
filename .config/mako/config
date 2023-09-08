@@ -1,0 +1,14 @@
+width=220
+
+font=Cantarell 10
+background-color=#253457
+border-size=2
+border-color=#ffffff8c
+border-radius=5
+outer-margin=5
+margin=5
+padding=10
+
+max-icon-size=32
+default-timeout=5000
+group-by=summary

@@ -17,11 +17,11 @@ elif [[ "$1" == "--toggle" ]]; then
 
 elif [[ "$1" == "--mic-inc" ]]; then
 	pamixer --default-source -i 5
-	notify-send "Microphone : $(pamixer --default-source --get-volume) %"
+	notify-send "Microphone $(pamixer --default-source --get-volume)%"
 
 elif [[ "$1" == "--mic-dec" ]]; then
 	pamixer --default-source -d 5
-	notify-send "Microphone : $(pamixer --default-source --get-volume) %"
+	notify-send "Microphone $(pamixer --default-source --get-volume)%"
 
 elif [[ "$1" == "--mic-toggle" ]]; then
 	if [ "$(pamixer --default-source --get-mute)" == "false" ]; then
