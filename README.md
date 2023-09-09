@@ -39,7 +39,7 @@ slack-desktop
 systemctl enable NetworkManager
 systemctl enable pipewire-pulse
 systemctl enable bluetooth
-systemctl enable mako
+systemctl --user enable mako
 
 ## todos
 screenshot with grimblast
@@ -51,4 +51,3 @@ emoji picker with ?
 
 # issues
 no custom cursor when hovering waybar
-broken notifications with mako
