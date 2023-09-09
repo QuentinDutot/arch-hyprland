@@ -1,7 +1,7 @@
 ## install
 distro: archlinux
 profile: desktop > hyprland
-options: systemd, pipewire, network manager, multilib (?), git
+options: systemd, pipewire, network manager, git
 
 ## init wifi
 nmcli device wifi connect <SSID> password <PASSWORD>
@@ -46,9 +46,9 @@ screenshot with grimblast
 file manager with nautilux
 splash screen with plymouth
 color picker with hyprpicker
-fix notifications with mako
 check swaync for notifications
 emoji picker with ?
 
 # issues
 no custom cursor when hovering waybar
+broken notifications with mako
