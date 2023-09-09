@@ -12,7 +12,8 @@
     "custom/terminal",
     "custom/browser",
     "custom/editor",
-    "custom/slack"
+    "custom/slack",
+    "custom/screenshot"
   ],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
@@ -65,6 +66,12 @@
   "custom/slack": {
     "format": "",
     "on-click": "sh -c 'slack' & disown",
+    "tooltip": false
+  },
+
+  "custom/screenshot": {
+    "format": "",
+    "on-click": "sh ~/.config/waybar/scripts/screenshot.sh",
     "tooltip": false
   },
 

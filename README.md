@@ -29,6 +29,7 @@ blueman-manager
 pamixer
 pavucontrol
 mako (dunst may need to be purged)
+grimblast
 
 ## applications (yay -S <PACKAGE>)
 microsoft-edge-stable-bin
@@ -42,12 +43,13 @@ systemctl enable bluetooth
 systemctl --user enable mako
 
 ## todos
-screenshot with grimblast
 file manager with nautilux
 splash screen with plymouth
 color picker with hyprpicker
 check swaync for notifications
 emoji picker with ?
+customize hyprland window border
+check systemd-boot for bootloader
 
 # issues
 no custom cursor when hovering waybar

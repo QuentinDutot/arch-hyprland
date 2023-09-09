@@ -47,6 +47,7 @@ tooltip label {
 #custom-browser,
 #custom-editor,
 #custom-slack,
+#custom-screenshot,
 #tray,
 #backlight,
 #pulseaudio,
@@ -81,6 +82,7 @@ tooltip label {
 }
 
 #custom-terminal,
+#custom-screenshot,
 #backlight,
 #clock,
 #custom-update,
