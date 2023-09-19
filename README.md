@@ -1,7 +1,7 @@
 ## Installation
 
 **distro** : archlinux
-**profile** : desktop + hyprland
+**profile** : minimal
 **options** : systemd, pipewire, network manager, git
 
 ### Init wifi
@@ -20,7 +20,7 @@
 
 ### Packages
 
-    yay -S kitty hyprpaper waybar otf-font-awesome pacman-contrib neofetch htop wl-clipboard bluez bluez-utils blueman pamixer pavucontrol mako grimblast
+    yay -S sddm hyprland hyprpaper kitty nano waybar otf-font-awesome pacman-contrib neofetch htop wl-clipboard bluez bluez-utils blueman pamixer pavucontrol mako grimblast
 
 ### Commands
 
