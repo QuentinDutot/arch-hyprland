@@ -47,6 +47,7 @@ tooltip label {
 #custom-browser,
 #custom-editor,
 #custom-slack,
+#custom-launcher,
 #custom-screenshot,
 #tray,
 #backlight,
@@ -63,6 +64,7 @@ tooltip label {
 
 #cpu,
 #custom-terminal,
+#custom-launcher,
 #backlight {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -76,13 +78,14 @@ tooltip label {
 }
 #disk,
 #custom-slack,
+#custom-screenshot,
 #network {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
 #custom-terminal,
-#custom-screenshot,
+#custom-launcher,
 #backlight,
 #clock,
 #custom-update,

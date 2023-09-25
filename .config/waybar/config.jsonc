@@ -13,6 +13,7 @@
     "custom/browser",
     "custom/editor",
     "custom/slack",
+    "custom/launcher",
     "custom/screenshot"
   ],
   "modules-center": ["hyprland/workspaces"],
@@ -66,6 +67,12 @@
   "custom/slack": {
     "format": "",
     "on-click": "sh -c 'slack' & disown",
+    "tooltip": false
+  },
+
+  "custom/launcher": {
+    "format": "",
+    "on-click": "rofi -show drun",
     "tooltip": false
   },
 
