@@ -20,7 +20,7 @@
 
 ### Packages
 
-    yay -S sddm hyprland hyprpaper hyprshot kitty nano waybar otf-font-awesome pacman-contrib neofetch htop bluez bluez-utils blueman pamixer pavucontrol mako rofi
+    yay -S sddm hyprland hyprpaper hyprshot hyprpicker kitty nano waybar otf-font-awesome pacman-contrib neofetch htop bluez bluez-utils blueman pamixer pavucontrol mako rofi wl-clipboard
 
 ### Commands
 
@@ -43,13 +43,9 @@
 
  - file manager with nautilus
  - splash screen with plymouth
- - color picker with hyprpicker
  - check swaync for notifications
  - emoji picker with ?
- - customize hyprland window border
  - check systemd-boot for bootloader
- - replace grimblast with hyprshot
- - purge dunst as its installed with hyprland
 
 ### Issues
 

@@ -45,6 +45,7 @@ tooltip label {
 #disk,
 #custom-launcher,
 #custom-screenshot,
+#custom-colorpicker,
 #tray,
 #backlight,
 #pulseaudio,
@@ -65,12 +66,13 @@ tooltip label {
   border-bottom-right-radius: 0px;
 }
 #memory,
+#custom-screenshot,
 #pulseaudio,
 #bluetooth {
   border-radius: 0px;
 }
 #disk,
-#custom-screenshot,
+#custom-colorpicker,
 #network {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;

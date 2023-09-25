@@ -9,12 +9,9 @@
     "cpu",
     "memory",
     "disk",
-    "custom/terminal",
-    "custom/browser",
-    "custom/editor",
-    "custom/slack",
     "custom/launcher",
-    "custom/screenshot"
+    "custom/screenshot",
+    "custom/colorpicker"
   ],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
@@ -54,7 +51,13 @@
 
   "custom/screenshot": {
     "format": "",
-    "on-click": "sh ~/.config/waybar/scripts/screenshot.sh",
+    "on-click": "sleep 0.1 && hyprshot -m region -o ~/Screenshots",
+    "tooltip": false
+  },
+
+  "custom/colorpicker": {
+    "format": "",
+    "on-click": "sleep 0.1 && hyprpicker --autocopy",
     "tooltip": false
   },
 
