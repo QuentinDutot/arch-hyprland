@@ -13,19 +13,19 @@
     cd /opt
     sudo git clone https://aur.archlinux.org/yay-git.git
     sudo chown -R <USER>:<USER> ./yay-git
-    cd yay-git && makepkg -si && cd .. && rm -rf yay-git
+    cd yay-git && makepkg -si && cd .. && sudo rm -rf yay-git
     yay -Syu
 
 ## Customization
 
 ### Packages
 
-    yay -S sddm hyprland hyprpaper kitty nano waybar otf-font-awesome pacman-contrib neofetch htop wl-clipboard bluez bluez-utils blueman pamixer pavucontrol mako grimblast
+    yay -S sddm hyprland hyprpaper kitty nano waybar otf-font-awesome pacman-contrib neofetch htop bluez bluez-utils blueman pamixer pavucontrol mako grimblast
 
 ### Commands
 
+    systemctl enable sddm
     systemctl enable NetworkManager
-    systemctl enable pipewire-pulse
     systemctl enable bluetooth
     systemctl --user enable mako
 
