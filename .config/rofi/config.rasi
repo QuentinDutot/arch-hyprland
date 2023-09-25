@@ -1,0 +1,47 @@
+configuration {
+    show-icons: true;
+}
+
+window {
+    transparency: "real";
+    width: 380px;
+    background-color: #253457;
+    border-radius: 5px;
+}
+
+inputbar {
+    enabled: false;
+}
+
+listview {
+    columns: 1;
+    lines: 8;
+    border: none;
+}
+
+element {
+    background-color: transparent;
+    border-radius: 5px;
+    spacing: 10px;
+    padding: 10px;
+}
+
+element normal.normal {
+	background-color: transparent;
+    text-color: #ffffffff;
+}
+
+element alternate.normal {
+	background-color: transparent;
+    text-color: #ffffffff;
+}
+
+element selected.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    text-color: #ffffffff;
+}
+
+element selected.normal {
+    background-color: rgba(255, 255, 255, 0.3);
+    text-color: #ffffffff;
+}
