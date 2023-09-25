@@ -20,7 +20,7 @@
 
 ### Packages
 
-    yay -S sddm hyprland hyprpaper hyprshot hyprpicker kitty nano waybar otf-font-awesome pacman-contrib neofetch htop bluez bluez-utils blueman pamixer pavucontrol mako rofi wl-clipboard
+    yay -S sddm hyprland hyprpaper hyprshot hyprpicker kitty nano waybar otf-font-awesome pacman-contrib neofetch htop bluez bluez-utils blueman pamixer pavucontrol mako rofi rofimoji noto-fonts-emoji wl-clipboard
 
 ### Commands
 
@@ -44,7 +44,6 @@
  - file manager with nautilus
  - splash screen with plymouth
  - check swaync for notifications
- - emoji picker with ?
  - check systemd-boot for bootloader
 
 ### Issues

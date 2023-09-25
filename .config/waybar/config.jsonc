@@ -11,7 +11,8 @@
     "disk",
     "custom/launcher",
     "custom/screenshot",
-    "custom/colorpicker"
+    "custom/colorpicker",
+    "custom/emojipicker"
   ],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
@@ -58,6 +59,12 @@
   "custom/colorpicker": {
     "format": "",
     "on-click": "sleep 0.1 && hyprpicker --autocopy",
+    "tooltip": false
+  },
+
+  "custom/emojipicker": {
+    "format": "",
+    "on-click": "rofimoji -a copy -s neutral",
     "tooltip": false
   },
 

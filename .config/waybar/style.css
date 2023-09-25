@@ -46,6 +46,7 @@ tooltip label {
 #custom-launcher,
 #custom-screenshot,
 #custom-colorpicker,
+#custom-emojipicker,
 #tray,
 #backlight,
 #pulseaudio,
@@ -67,12 +68,13 @@ tooltip label {
 }
 #memory,
 #custom-screenshot,
+#custom-colorpicker,
 #pulseaudio,
 #bluetooth {
   border-radius: 0px;
 }
 #disk,
-#custom-colorpicker,
+#custom-emojipicker,
 #network {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
