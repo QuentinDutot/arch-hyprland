@@ -43,10 +43,6 @@ tooltip label {
 #cpu,
 #memory,
 #disk,
-#custom-terminal,
-#custom-browser,
-#custom-editor,
-#custom-slack,
 #custom-launcher,
 #custom-screenshot,
 #tray,
@@ -63,28 +59,23 @@ tooltip label {
 }
 
 #cpu,
-#custom-terminal,
 #custom-launcher,
 #backlight {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 #memory,
-#custom-browser,
-#custom-editor,
 #pulseaudio,
 #bluetooth {
   border-radius: 0px;
 }
 #disk,
-#custom-slack,
 #custom-screenshot,
 #network {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
-#custom-terminal,
 #custom-launcher,
 #backlight,
 #clock,

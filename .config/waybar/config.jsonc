@@ -46,30 +46,6 @@
     "tooltip-format": "{used} on {total}"
   },
 
-  "custom/terminal": {
-    "format": "",
-    "on-click": "kitty",
-    "tooltip": false
-  },
-
-  "custom/browser": {
-    "format": "",
-    "on-click": "sh -c 'microsoft-edge-stable' & disown",
-    "tooltip": false
-  },
-
-  "custom/editor": {
-    "format": "",
-    "on-click": "sh -c 'code' & disown",
-    "tooltip": false
-  },
-
-  "custom/slack": {
-    "format": "",
-    "on-click": "sh -c 'slack' & disown",
-    "tooltip": false
-  },
-
   "custom/launcher": {
     "format": "",
     "on-click": "rofi -show drun",
