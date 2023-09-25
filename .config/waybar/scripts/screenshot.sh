@@ -1,8 +1,5 @@
 #!/bin/bash
 
-TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
-
-grimblast save area "$HOME/Screenshots/$TIMESTAMP.png"
-
-notify-send "Screenshot saved"
-```
+# Hack to use hyprshot within waybar
+sleep 0.5
+hyprshot -m region -o ~/Screenshots

@@ -20,7 +20,7 @@
 
 ### Packages
 
-    yay -S sddm hyprland hyprpaper kitty nano waybar otf-font-awesome pacman-contrib neofetch htop bluez bluez-utils blueman pamixer pavucontrol mako rofi grimblast
+    yay -S sddm hyprland hyprpaper hyprshot kitty nano waybar otf-font-awesome pacman-contrib neofetch htop bluez bluez-utils blueman pamixer pavucontrol mako rofi
 
 ### Commands
 
